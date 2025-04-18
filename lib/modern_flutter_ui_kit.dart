@@ -16,6 +16,7 @@ export 'src/components/buttons/button.dart';
 export 'src/components/buttons/icon_button.dart';
 export 'src/components/buttons/outlined_button.dart';
 export 'src/components/buttons/text_button.dart';
+export 'src/components/buttons/custom_button.dart';
 
 // Inputs
 export 'src/components/inputs/custom_text_field.dart';

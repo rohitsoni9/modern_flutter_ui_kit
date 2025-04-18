@@ -7,6 +7,8 @@ import 'package:modern_flutter_ui_kit/src/components/avatars/custom_avatar.dart'
 import 'package:modern_flutter_ui_kit/src/components/navigation/custom_bottom_nav_bar.dart';
 import 'package:modern_flutter_ui_kit/src/components/navigation/custom_tab_bar.dart';
 
+import '../../modern_flutter_ui_kit.dart';
+
 class ComponentShowcaseScreen extends StatefulWidget {
   const ComponentShowcaseScreen({super.key});
 

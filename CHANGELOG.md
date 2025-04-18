@@ -12,3 +12,4 @@ Initial release of Modern Flutter UI Kit:
 * Cached image loading
 * Shimmer loading effects
 * Screen size adaptation utilities
+

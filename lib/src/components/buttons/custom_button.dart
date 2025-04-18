@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-
-enum ButtonVariant { primary, secondary, outlined, text }
+import 'package:modern_flutter_ui_kit/src/components/buttons/button.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
@@ -59,6 +58,10 @@ class CustomButton extends StatelessWidget {
       case ButtonVariant.text:
         backgroundColor = Colors.transparent;
         foregroundColor = customColor ?? colorScheme.primary;
+        break;
+      default:
+        backgroundColor = customColor ?? colorScheme.primary;
+        foregroundColor = colorScheme.onPrimary;
         break;
     }
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../theme/app_theme.dart';
+import 'package:modern_flutter_ui_kit/src/theme/app_theme.dart';
 
 /// A modern, customizable button component.
 ///
@@ -85,16 +85,7 @@ class ModernButton extends StatelessWidget {
 }
 
 /// The variant of the button
-enum ButtonVariant {
-  /// A filled button with solid background
-  filled,
-
-  /// An outlined button with border
-  outlined,
-
-  /// A text button with no background or border
-  text,
-}
+enum ButtonVariant { filled, outlined, text, primary, secondary }
 
 /// The size of the button
 enum ButtonSize {

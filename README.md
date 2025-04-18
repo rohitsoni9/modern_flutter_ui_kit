@@ -23,6 +23,16 @@ A modern and customizable Flutter UI kit that provides beautiful components and 
 - 📱 Responsive design
 - 🚀 Easy to use and customize
 
+## Screenshots
+
+<div align="center">
+  <img src="assets/screenshots/buttons.png" alt="Buttons" width="300"/>
+  <img src="assets/screenshots/text_fields.png" alt="Text Fields" width="300"/>
+  <img src="assets/screenshots/cards.png" alt="Cards" width="300"/>
+  <img src="assets/screenshots/dialogs.png" alt="Dialogs" width="300"/>
+  <img src="assets/screenshots/loading.png" alt="Loading States" width="300"/>
+</div>
+
 ## Components
 
 ### Buttons
