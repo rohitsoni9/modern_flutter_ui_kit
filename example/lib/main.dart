@@ -1,4 +1,4 @@
-import 'package:demo/component_showcase_screen.dart';
+import 'package:example/component_showcase_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

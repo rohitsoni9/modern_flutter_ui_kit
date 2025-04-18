@@ -1,5 +1,9 @@
 ## 1.0.2
 
+* Added Example
+
+## 1.0.2
+
 * Added CustomBottomNavBar component with animation support
 * Enhanced theme customization options
 * Added CustomDialog component with multiple variants
