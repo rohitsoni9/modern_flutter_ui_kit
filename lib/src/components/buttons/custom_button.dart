@@ -2,19 +2,50 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:modern_flutter_ui_kit/src/components/buttons/button.dart';
 
+/// A customizable button widget with support for different variants and loading state.
+///
+/// This widget provides a modern button component that can display text and an icon,
+/// with support for different variants, loading state, and custom colors.
+/// It automatically adapts to different screen sizes and themes.
 class CustomButton extends StatelessWidget {
+  /// The text to display on the button.
   final String text;
+
+  /// Callback when the button is pressed.
   final VoidCallback? onPressed;
+
+  /// The visual style variant of the button.
   final ButtonVariant variant;
+
+  /// Whether the button is in a loading state.
   final bool isLoading;
+
+  /// Optional icon to display on the button.
   final IconData? icon;
+
+  /// Optional fixed width for the button.
   final double? width;
+
+  /// Optional fixed height for the button.
   final double? height;
+
+  /// Optional custom color for the button.
   final Color? customColor;
+
+  /// Whether the button should expand to fill the available width.
   final bool isFullWidth;
+
+  /// Optional minimum width constraint for the button.
   final double? minWidth;
+
+  /// Optional maximum width constraint for the button.
   final double? maxWidth;
 
+  /// Creates a custom button.
+  ///
+  /// The [text] and [onPressed] parameters are required.
+  /// All other parameters are optional and can be used to customize the
+  /// appearance and behavior of the button.
   const CustomButton({
     super.key,
     required this.text,

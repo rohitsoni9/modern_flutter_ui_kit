@@ -1,36 +1,100 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+/// A customizable text field widget with support for various input types and styles.
+///
+/// This widget provides a modern text input component with support for labels,
+/// hints, validation, icons, and various input types. It automatically adapts
+/// to different screen sizes and themes.
 class CustomTextField extends StatelessWidget {
+  /// Optional label text displayed above the text field.
   final String? label;
+
+  /// Optional hint text displayed when the text field is empty.
   final String? hint;
+
+  /// Optional helper text displayed below the text field.
   final String? helperText;
+
+  /// Optional error text displayed below the text field when validation fails.
   final String? errorText;
+
+  /// Optional controller for the text field.
   final TextEditingController? controller;
+
+  /// Optional focus node for the text field.
   final FocusNode? focusNode;
+
+  /// Optional keyboard type for the text field.
   final TextInputType? keyboardType;
+
+  /// Optional text input action for the text field.
   final TextInputAction? textInputAction;
+
+  /// Whether the text field should obscure the input (for passwords).
   final bool obscureText;
+
+  /// Whether the text field is enabled for input.
   final bool enabled;
+
+  /// Optional maximum number of lines for the text field.
   final int? maxLines;
+
+  /// Optional minimum number of lines for the text field.
   final int? minLines;
+
+  /// Optional maximum length of the input text.
   final int? maxLength;
+
+  /// Optional icon displayed at the start of the text field.
   final Widget? prefixIcon;
+
+  /// Optional icon displayed at the end of the text field.
   final Widget? suffixIcon;
+
+  /// Optional input formatters for the text field.
   final List<TextInputFormatter>? inputFormatters;
+
+  /// Optional callback when the text field content changes.
   final ValueChanged<String>? onChanged;
+
+  /// Optional callback when editing is complete.
   final VoidCallback? onEditingComplete;
+
+  /// Optional callback when the text field is submitted.
   final ValueChanged<String>? onSubmitted;
+
+  /// Optional validator function for the text field.
   final FormFieldValidator<String>? validator;
+
+  /// The text capitalization style for the text field.
   final TextCapitalization textCapitalization;
+
+  /// Whether the text field should automatically focus when displayed.
   final bool autofocus;
+
+  /// Whether the text field is read-only.
   final bool readOnly;
+
+  /// Optional padding around the text field content.
   final EdgeInsetsGeometry? contentPadding;
+
+  /// Optional background color for the text field.
   final Color? fillColor;
+
+  /// Whether the text field should have a filled background.
   final bool filled;
+
+  /// Optional minimum height constraint for the text field.
   final double? minHeight;
+
+  /// Optional maximum width constraint for the text field.
   final double? maxWidth;
 
+  /// Creates a custom text field.
+  ///
+  /// All parameters are optional and can be used to customize the appearance
+  /// and behavior of the text field.
   const CustomTextField({
     super.key,
     this.label,

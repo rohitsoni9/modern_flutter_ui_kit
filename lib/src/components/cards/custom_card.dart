@@ -1,22 +1,67 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
-enum CardVariant { elevated, outlined, filled }
+/// The visual style variant of a card.
+///
+/// This enum defines different visual styles for cards, each with its own
+/// elevation, border, and background characteristics.
+enum CardVariant {
+  /// A card with elevation and shadow, appearing to float above the surface.
+  elevated,
 
+  /// A card with a border but no elevation or shadow.
+  outlined,
+
+  /// A card with a filled background color but no elevation or shadow.
+  filled
+}
+
+/// A customizable card widget with support for different variants and animations.
+///
+/// This widget provides a modern, animated card with support for different
+/// visual styles (elevated, outlined, filled), custom colors, and animations.
+/// It automatically adapts to different screen sizes and themes.
 class CustomCard extends StatelessWidget {
+  /// The widget to display inside the card.
   final Widget child;
+
+  /// The visual style variant of the card.
   final CardVariant variant;
+
+  /// Optional padding around the card content.
   final EdgeInsetsGeometry? padding;
+
+  /// Optional margin around the card.
   final EdgeInsetsGeometry? margin;
+
+  /// Optional elevation of the card (only applies to elevated variant).
   final double? elevation;
+
+  /// Optional background color of the card.
   final Color? backgroundColor;
+
+  /// Optional border radius for the card corners.
   final BorderRadius? borderRadius;
+
+  /// Optional callback when the card is tapped.
   final VoidCallback? onTap;
+
+  /// Whether to animate the card when it appears.
   final bool animate;
+
+  /// Optional duration for the card animation.
   final Duration? animationDuration;
+
+  /// Optional maximum width constraint for the card.
   final double? maxWidth;
+
+  /// Optional minimum height constraint for the card.
   final double? minHeight;
 
+  /// Creates a custom card.
+  ///
+  /// The [child] parameter is required. All other parameters are optional
+  /// and can be used to customize the appearance and behavior of the card.
   const CustomCard({
     super.key,
     required this.child,

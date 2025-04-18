@@ -26,11 +26,11 @@ A modern and customizable Flutter UI kit that provides beautiful components and 
 ## Screenshots
 
 <div align="center">
-  <img src="assets/screenshots/buttons.png" alt="Buttons" width="300"/>
-  <img src="assets/screenshots/text_fields.png" alt="Text Fields" width="300"/>
-  <img src="assets/screenshots/cards.png" alt="Cards" width="300"/>
-  <img src="assets/screenshots/dialogs.png" alt="Dialogs" width="300"/>
-  <img src="assets/screenshots/loading.png" alt="Loading States" width="300"/>
+  <img src="assets/screenshots/ss1.png" alt="Buttons" width="300"/>
+  <img src="assets/screenshots/ss2.png" alt="Text Fields" width="300"/>
+  <img src="assets/screenshots/ss3.png" alt="Cards" width="300"/>
+  <img src="assets/screenshots/ss4.png" alt="Dialogs" width="300"/>
+  <img src="assets/screenshots/ss5.png" alt="Loading States" width="300"/>
 </div>
 
 ## Components

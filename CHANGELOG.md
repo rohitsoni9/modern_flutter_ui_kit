@@ -1,3 +1,15 @@
+## 1.0.2
+
+* Added CustomBottomNavBar component with animation support
+* Enhanced theme customization options
+* Added CustomDialog component with multiple variants
+* Improved responsiveness for small screens
+* Added animation curve and duration customization
+* Updated dependencies to latest stable versions
+* Fixed elevation and shadow rendering issues
+* Optimized performance for complex animations
+
+
 ## 1.0.1
 
 * Added comprehensive documentation

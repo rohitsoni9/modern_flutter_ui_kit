@@ -1,26 +1,71 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
+/// A customizable tab bar widget with support for animations and different styles.
+///
+/// This widget provides a modern tab bar component that can display multiple
+/// tabs with support for animations, custom colors, and different styles.
+/// It automatically adapts to different screen sizes and themes.
 class CustomTabBar extends StatelessWidget implements PreferredSizeWidget {
+  /// The index of the currently selected tab.
   final int currentIndex;
+
+  /// The list of tab labels to display.
   final List<String> tabs;
+
+  /// Callback when a tab is tapped.
   final ValueChanged<int> onTap;
+
+  /// Optional background color for the tab bar.
   final Color? backgroundColor;
+
+  /// Optional color for the selected tab text.
   final Color? selectedColor;
+
+  /// Optional color for the unselected tab text.
   final Color? unselectedColor;
+
+  /// Optional color for the tab indicator.
   final Color? indicatorColor;
+
+  /// Optional height of the tab indicator.
   final double? indicatorHeight;
+
+  /// Optional weight of the tab indicator.
   final double? indicatorWeight;
+
+  /// Optional padding around the tab bar.
   final EdgeInsetsGeometry? padding;
+
+  /// Whether the tab bar should scroll horizontally when tabs overflow.
   final bool isScrollable;
+
+  /// Optional height of each tab.
   final double? tabHeight;
+
+  /// Optional text style for the selected tab label.
   final TextStyle? selectedLabelStyle;
+
+  /// Optional text style for the unselected tab label.
   final TextStyle? unselectedLabelStyle;
+
+  /// Optional duration for the tab animations.
   final Duration? animationDuration;
+
+  /// Optional curve for the tab animations.
   final Curve? animationCurve;
+
+  /// Optional minimum height constraint for the tab bar.
   final double? minHeight;
+
+  /// Optional maximum height constraint for the tab bar.
   final double? maxHeight;
 
+  /// Creates a custom tab bar.
+  ///
+  /// The [currentIndex], [tabs], and [onTap] parameters are required.
+  /// All other parameters are optional and can be used to customize the
+  /// appearance and behavior of the tab bar.
   const CustomTabBar({
     super.key,
     required this.currentIndex,

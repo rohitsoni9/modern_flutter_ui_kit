@@ -1,24 +1,65 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
+/// A customizable list tile widget with support for leading and trailing widgets.
+///
+/// This widget provides a modern list tile component that can display a leading
+/// widget, title, subtitle, and trailing widget. It supports selection state,
+/// tap handling, and animations. It automatically adapts to different screen
+/// sizes and themes.
 class CustomListTile extends StatelessWidget {
+  /// Optional widget displayed at the start of the tile.
   final Widget? leading;
+
+  /// Optional widget displayed as the main title of the tile.
   final Widget? title;
+
+  /// Optional widget displayed below the title.
   final Widget? subtitle;
+
+  /// Optional widget displayed at the end of the tile.
   final Widget? trailing;
+
+  /// Optional callback when the tile is tapped.
   final VoidCallback? onTap;
+
+  /// Whether the tile is in the selected state.
   final bool selected;
+
+  /// Whether the tile is enabled for interaction.
   final bool enabled;
+
+  /// Optional padding around the tile content.
   final EdgeInsetsGeometry? contentPadding;
+
+  /// Optional color for the selected state text.
   final Color? selectedColor;
+
+  /// Optional color for the selected state background.
   final Color? selectedTileColor;
+
+  /// Optional gap between the leading widget and title.
   final double? horizontalTitleGap;
+
+  /// Optional minimum vertical padding.
   final double? minVerticalPadding;
+
+  /// Optional minimum width for the leading widget area.
   final double? minLeadingWidth;
+
+  /// Whether the tile should use a more compact layout.
   final bool dense;
+
+  /// Whether to animate the tile when it appears.
   final bool animate;
+
+  /// Optional minimum height constraint for the tile.
   final double? minHeight;
 
+  /// Creates a custom list tile.
+  ///
+  /// All parameters are optional and can be used to customize the appearance
+  /// and behavior of the list tile.
   const CustomListTile({
     super.key,
     this.leading,
