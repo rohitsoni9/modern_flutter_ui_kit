@@ -13,7 +13,7 @@ enum CardVariant {
   outlined,
 
   /// A card with a filled background color but no elevation or shadow.
-  filled
+  filled,
 }
 
 /// A customizable card widget with support for different variants and animations.
@@ -119,13 +119,16 @@ class CustomCard extends StatelessWidget {
           borderRadius:
               borderRadius ?? BorderRadius.circular(isSmallScreen ? 8 : 12),
           border: Border.fromBorderSide(borderSide),
-          boxShadow: cardElevation == 0 ? null : [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 26),
-              blurRadius: cardElevation * 2,
-              offset: Offset(0, cardElevation),
-            ),
-          ],
+          boxShadow:
+              cardElevation == 0
+                  ? null
+                  : [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 26),
+                      blurRadius: cardElevation * 2,
+                      offset: Offset(0, cardElevation),
+                    ),
+                  ],
         ),
         child: ClipRRect(
           borderRadius:

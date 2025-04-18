@@ -19,7 +19,7 @@ enum DialogType {
   error,
 
   /// A custom dialog that allows for custom styling and behavior.
-  custom
+  custom,
 }
 
 /// A customizable dialog widget that supports different types and animations.

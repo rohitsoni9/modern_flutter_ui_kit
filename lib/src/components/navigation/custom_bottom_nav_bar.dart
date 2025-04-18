@@ -162,8 +162,6 @@ class _CustomBottomNavBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final isSmallScreen = size.width < 600;
     final color = isSelected ? selectedColor : unselectedColor;
     final icon = Icon(item.icon, size: iconSize, color: color);
 

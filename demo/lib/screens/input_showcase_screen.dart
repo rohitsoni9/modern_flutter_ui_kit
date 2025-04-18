@@ -83,9 +83,7 @@ class _InputShowcaseScreenState extends State<InputShowcaseScreen> {
             controller: _numberController,
             keyboardType: TextInputType.number,
             prefixIcon: const Icon(Icons.numbers),
-            inputFormatters: [
-              FilteringTextInputFormatter.digitsOnly,
-            ],
+            inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           ),
           const SizedBox(height: 8),
           CustomTextField(
@@ -94,9 +92,7 @@ class _InputShowcaseScreenState extends State<InputShowcaseScreen> {
             controller: _phoneController,
             keyboardType: TextInputType.phone,
             prefixIcon: const Icon(Icons.phone),
-            inputFormatters: [
-              FilteringTextInputFormatter.digitsOnly,
-            ],
+            inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           ),
           const SizedBox(height: 24),
           const Text(
@@ -143,4 +139,4 @@ class _InputShowcaseScreenState extends State<InputShowcaseScreen> {
       ),
     );
   }
-} 
+}

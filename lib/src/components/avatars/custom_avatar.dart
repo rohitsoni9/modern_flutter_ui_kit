@@ -13,7 +13,7 @@ enum AvatarShape {
   rounded,
 
   /// A square avatar with sharp corners.
-  square
+  square,
 }
 
 /// The size of an avatar.
@@ -31,7 +31,7 @@ enum AvatarSize {
   large,
 
   /// An extra large avatar, typically used in hero sections or featured content.
-  extraLarge
+  extraLarge,
 }
 
 /// The status indicator of an avatar.
@@ -49,7 +49,7 @@ enum AvatarStatus {
   busy,
 
   /// Indicates the user is currently away or inactive.
-  away
+  away,
 }
 
 /// A customizable avatar widget with support for different shapes, sizes, and status indicators.
