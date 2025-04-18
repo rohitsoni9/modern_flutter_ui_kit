@@ -1,3 +1,10 @@
+## 1.0.1
+
+* Added comprehensive documentation
+* Improved component examples
+* Added screenshots for all components
+* Fixed minor UI inconsistencies
+
 ## 1.0.0
 
 Initial release of Modern Flutter UI Kit:
