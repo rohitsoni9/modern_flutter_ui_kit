@@ -1,3 +1,14 @@
+## 1.0.4
+
+* Added new CustomButton variants with gradient support
+* Enhanced CustomTextField with password visibility toggle
+* Improved accessibility support across all components
+* Added new animation presets for smoother transitions
+* Fixed memory leaks in animation controllers
+* Optimized widget rebuild performance
+* Added support for custom error states in form fields
+* Updated documentation with new examples
+
 ## 1.0.3
 
 * Added Example

@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modern_flutter_ui_kit/modern_flutter_ui_kit.dart';
 import 'package:provider/provider.dart';
-import '../components/buttons/custom_button.dart';
-import '../components/inputs/custom_text_field.dart';
-import '../components/cards/custom_card.dart';
-import '../components/lists/custom_list_tile.dart';
-import '../components/avatars/custom_avatar.dart';
-import '../theme/theme_provider.dart';
-
 class ExampleScreen extends StatefulWidget {
   const ExampleScreen({super.key});
 

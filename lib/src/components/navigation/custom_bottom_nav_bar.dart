@@ -90,7 +90,7 @@ class CustomBottomNavBar extends StatelessWidget {
         color: backgroundColor ?? colorScheme.surface,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 26),
             blurRadius: elevation ?? (isSmallScreen ? 4 : 8),
             offset: const Offset(0, -2),
           ),

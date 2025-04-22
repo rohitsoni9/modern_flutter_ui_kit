@@ -13,65 +13,69 @@ and the Flutter guide for
 
 # Modern Flutter UI Kit
 
-A modern and customizable Flutter UI kit that provides beautiful components and themes for building stunning applications.
+[![Flutter Favorite](https://img.shields.io/badge/Flutter-Favorite-blue.svg)](https://flutter.dev/docs/development/packages-and-plugins/favorites)
+[![pub package](https://img.shields.io/pub/v/modern_flutter_ui_kit.svg)](https://pub.dev/packages/modern_flutter_ui_kit)
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
-## Features
+A comprehensive and modern Flutter UI kit that provides beautiful, customizable components and themes for building stunning applications. Built with Material Design 3 principles and optimized for both mobile and web platforms.
 
-- 🎨 Modern and customizable theme system
-- 🌓 Light and dark theme support
-- 🎯 Reusable UI components
-- 📱 Responsive design
-- 🚀 Easy to use and customize
+## ✨ Features
 
-## Screenshots
+- 🎨 **Modern Theme System**
+  - Material Design 3 compliant
+  - Customizable color schemes
+  - Typography system
+  - Spacing and elevation tokens
+
+- 🌓 **Theme Support**
+  - Light and dark mode
+  - Dynamic theme switching
+  - Custom theme creation
+  - Theme persistence
+
+- 🎯 **UI Components**
+  - Buttons (Primary, Secondary, Outlined, Text)
+  - Text Fields with validation
+  - Cards and containers
+  - Navigation components
+  - Form elements
+  - Loading indicators
+  - Dialogs and modals
+
+- 📱 **Responsive Design**
+  - Adaptive layouts
+  - Mobile-first approach
+  - Web optimization
+  - Cross-platform compatibility
+
+## 📸 Screenshots
 
 <div align="center">
   <img src="assets/screenshots/ss1.png" alt="Buttons" width="300"/>
   <img src="assets/screenshots/ss2.png" alt="Text Fields" width="300"/>
   <img src="assets/screenshots/ss3.png" alt="Cards" width="300"/>
-  <img src="assets/screenshots/ss4.png" alt="Dialogs" width="300"/>
-  <img src="assets/screenshots/ss5.png" alt="Loading States" width="300"/>
 </div>
 
-## Components
+## 🚀 Getting Started
 
-### Buttons
+### Installation
 
-Customizable buttons with different variants:
-
-- Primary
-- Secondary
-- Outlined
-- Text
-- Loading state
-- With icons
-
-### Text Fields
-
-Enhanced text fields with:
-
-- Labels and hints
-- Error states
-- Helper text
-- Custom styling
-- Validation support
-
-## Getting Started
-
-1. Add the package to your `pubspec.yaml`:
+Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   modern_flutter_ui_kit: ^0.0.1
 ```
 
-2. Import the package:
+### Basic Usage
+
+1. Import the package:
 
 ```dart
 import 'package:modern_flutter_ui_kit/modern_flutter_ui_kit.dart';
 ```
 
-3. Wrap your app with the theme provider:
+2. Wrap your app with the theme provider:
 
 ```dart
 void main() {
@@ -84,9 +88,10 @@ void main() {
 }
 ```
 
-4. Use the components in your app:
+3. Use components in your app:
 
 ```dart
+// Button example
 CustomButton(
   text: 'Click me',
   onPressed: () {
@@ -95,6 +100,7 @@ CustomButton(
   variant: ButtonVariant.primary,
 );
 
+// Text field example
 CustomTextField(
   label: 'Email',
   hint: 'Enter your email',
@@ -103,9 +109,9 @@ CustomTextField(
 );
 ```
 
-## Theme Customization
+## 🎨 Theme Customization
 
-The UI kit comes with a default theme that you can customize:
+Customize the theme to match your brand:
 
 ```dart
 ThemeData(
@@ -113,16 +119,39 @@ ThemeData(
   colorScheme: ColorScheme.light(
     primary: Colors.blue,
     secondary: Colors.green,
-    // ... other colors
+    surface: Colors.white,
+    background: Colors.grey[50],
+    error: Colors.red,
   ),
+  typography: Typography.material2021(),
   // ... other theme properties
 );
 ```
 
-## Contributing
+## 📚 Documentation
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+For detailed documentation and API reference, visit our [documentation site](https://your-docs-site.com).
 
-## License
+## 🤝 Contributing
+
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Flutter team for the amazing framework
+- Material Design team for the design system
+- All contributors who have helped shape this project
+
+## 📞 Support
+
+For support, email me@therohitsoni.com
