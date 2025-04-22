@@ -1,3 +1,14 @@
+## 1.0.5
+
+* Added new CustomCard component with multiple variants
+* Enhanced CustomButton with loading state support
+* Improved form validation feedback
+* Added new color schemes and theme presets
+* Fixed text scaling issues in CustomTextField
+* Optimized widget tree for better performance
+* Added support for custom icons in navigation components
+* Updated example app with new component demonstrations
+
 ## 1.0.4
 
 * Added new CustomButton variants with gradient support
